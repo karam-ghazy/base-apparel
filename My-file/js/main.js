@@ -18,8 +18,10 @@ submitBtn.onclick = function () {
     }
   } else {
     let p = document.querySelector(".error-message");
-    p.remove();
-    emailInput.classList.remove("error");
+    if (p) {
+      p.remove();
+      emailInput.classList.remove("error");
+    }
   }
 };
 
