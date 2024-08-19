@@ -112,7 +112,7 @@ body {
   }
 }
 
-@media (min-width: 100px) and (max-width: 1249px) {
+@media (min-width: 1000px) and (max-width: 1249px) {
   .container {
     .left {
       .contact {
@@ -140,6 +140,18 @@ body {
 }
 @media (max-width: 999px) {
   .container {
+    .left {
+      padding: 6% 0%;
+      .text {
+        text-align: center;
+        .title {
+          font-size: 40px;
+        }
+        p:not(.title) {
+          width: 100%;
+        }
+      }
+    }
     .right {
       display: none;
     }
@@ -149,8 +161,12 @@ body {
   .container {
     .left {
       .text {
+        text-align: center;
         .title {
           font-size: 40px;
+        }
+        p:not(.title) {
+          width: 100%;
         }
       }
       .contact {
